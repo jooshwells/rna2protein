@@ -22,6 +22,9 @@ def main():
 
     x = 0
 
+    # checks all 64 base combos
+    # why did i make so many if statements
+    # this is horrendous
     for i in range(len(rna)):
         if x != len(rna):
             if rna[x] == 'U':
@@ -294,5 +297,7 @@ def main():
                         w.write('G')
                         x += 3
                         continue
+    f.close()
+    w.close()
     
 main()
